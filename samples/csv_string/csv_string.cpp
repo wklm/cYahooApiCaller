@@ -17,8 +17,7 @@ double string_to_double( const std::string& s ) {
 double standard_deviation(double data[], int n) {
     double mean=0.0, sum_deviation=0.0;
     int i;
-    for(i=0; i<n;++i)
-    {
+    for(i=0; i<n;++i) {
         mean+=data[i];
     }
     mean=mean/n;
@@ -26,7 +25,6 @@ double standard_deviation(double data[], int n) {
         sum_deviation+=(data[i]-mean)*(data[i]-mean);
     return sqrt(sum_deviation/n);
 }
-
 
 class Date {
 public:
@@ -56,29 +54,32 @@ public:
     void setYear(int year) {
         this->year = year;
     }
-
 };
 
 int main(int argc, const char * argv[]) {
+    if(argc < 9) {
+        cerr << "Usage: " << argv[0] << " COMPANYNAME BEGINDAY BEGINMONTH BEGINYEAR ENDDAY ENDMONTH ENDYEAR STRIKE PRICE" << endl;
+        return 1;
+    }
     try {
-        std::string companyName = "";
+        string companyName = argv[1];
         Date begin;
         Date end;
 
-        int beginDay;
-        int beginMonth;
-        int beginYear;
+        int beginDay = argv[2];
+        int beginMonth = argv[3];
+        int beginYear = argv[4];
 
-        int endDay;
-        int endMonth;
-        int endYear;
+        int endDay = argv[5];
+        int endMonth = argv[6];
+        int endYear = argv[7];
 
         double S; // Option price
-        double K; // Strike price
+        double K = argv[8]; // Strike price
         double r = 0.05;
         double v;
         double T = 1.0;
-
+        /*
         std::cout << "company?" << std::endl;
         std::cin >> companyName;
 
@@ -98,7 +99,7 @@ int main(int argc, const char * argv[]) {
 
         std::cout << "Strike price?" << std::endl;
         std::cin >> K;
-
+        */
 
         begin.setDay(beginDay);
         begin.setMonth(beginMonth);
