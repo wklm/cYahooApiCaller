@@ -183,25 +183,25 @@ int main(int argc, const char * argv[]) {
 
         std::cout << "<div class= \"panel panel-primary\">  <div class=\"panel-heading\"><h3 class=\"panel-title\">GREEKS</h3></div><div class=\"list-group\">";
 
-        std::cout << "<p class=\"list-group-item\"><big>Underlying:      " << S << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Strike:          " << K << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Risk-Free Rate:  " << r << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Volatility:      " << v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Maturity:        " << T << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Underlying:      " << S << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Strike:          " << K << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Risk-Free Rate:  " << r << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Volatility:      " << v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Maturity:        " << T << "</big></p>";
 
-        std::cout << "<p class=\"list-group-item\"><big>Call Price:      " << call << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Call Delta:      " << call_delta_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Call Gamma:      " << call_gamma_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Call Vega:       " << call_vega_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Call Theta:      " << call_theta_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Call Rho:        " << call_rho_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Price:      " << call << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Delta:      " << call_delta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Gamma:      " << call_gamma_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Vega:       " << call_vega_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Theta:      " << call_theta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Call Rho:        " << call_rho_v << "</big></p>";
 
-        std::cout << "<p class=\"list-group-item\"><big>Put Price:       " << put << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Put Delta:       " << put_delta_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Put Gamma:       " << put_gamma_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Put Vega:        " << put_vega_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Put Theta:       " << put_theta_v << "</big></p>";
-        std::cout << "<p class=\"list-group-item\"><big>Put Rho:         " << put_rho_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Price:       " << put << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Delta:       " << put_delta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Gamma:       " << put_gamma_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Vega:        " << put_vega_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Theta:       " << put_theta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item text-center\"><big>Put Rho:         " << put_rho_v << "</big></p>";
 
         std::cout << "</div></body></html>";
 
