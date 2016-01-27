@@ -179,25 +179,25 @@ int main(int argc, const char * argv[]) {
         double put_theta_v = put_theta(S, K, r, v, T);
         double put_rho_v = put_rho(S, K, r, v, T);
 
-        std::cout << "Underlying:      " << S << std::endl;
-        std::cout << "Strike:          " << K << std::endl;
-        std::cout << "Risk-Free Rate:  " << r << std::endl;
-        std::cout << "Volatility:      " << v << std::endl;
-        std::cout << "Maturity:        " << T << std::endl << std::endl;
+        std::cout << "<p><big>Underlying:      " << S << "</big></p>";
+        std::cout << "<p><big>Strike:          " << K << "</big></p>";
+        std::cout << "<p><big>Risk-Free Rate:  " << r << "</big></p>";
+        std::cout << "<p><big>Volatility:      " << v << "</big></p>";
+        std::cout << "<p><big>Maturity:        " << T << "</big></p>";
 
-        std::cout << "Call Price:      " << call << std::endl;
-        std::cout << "Call Delta:      " << call_delta_v << std::endl;
-        std::cout << "Call Gamma:      " << call_gamma_v << std::endl;
-        std::cout << "Call Vega:       " << call_vega_v << std::endl;
-        std::cout << "Call Theta:      " << call_theta_v << std::endl;
-        std::cout << "Call Rho:        " << call_rho_v << std::endl << std::endl;
+        std::cout << "<p><big>Call Price:      " << call << "</big></p>";
+        std::cout << "<p><big>Call Delta:      " << call_delta_v << "</big></p>";
+        std::cout << "<p><big>Call Gamma:      " << call_gamma_v << "</big></p>";
+        std::cout << "<p><big>Call Vega:       " << call_vega_v << "</big></p>";
+        std::cout << "<p><big>Call Theta:      " << call_theta_v << "</big></p>";
+        std::cout << "<p><big>Call Rho:        " << call_rho_v << "</big></p>";
 
-        std::cout << "Put Price:       " << put << std::endl;
-        std::cout << "Put Delta:       " << put_delta_v << std::endl;
-        std::cout << "Put Gamma:       " << put_gamma_v << std::endl;
-        std::cout << "Put Vega:        " << put_vega_v << std::endl;
-        std::cout << "Put Theta:       " << put_theta_v << std::endl;
-        std::cout << "Put Rho:         " << put_rho_v << std::endl;
+        std::cout << "<p><big>Put Price:       " << put << "</big></p>";
+        std::cout << "<p><big>Put Delta:       " << put_delta_v << "</big></p>";
+        std::cout << "<p><big>Put Gamma:       " << put_gamma_v << "</big></p>";
+        std::cout << "<p><big>Put Vega:        " << put_vega_v << "</big></p>";
+        std::cout << "<p><big>Put Theta:       " << put_theta_v << "</big></p>";
+        std::cout << "<p><big>Put Rho:         " << put_rho_v << "</big></p>";
 
     } catch (const std::exception& exception) {
         std::cerr << "Error: " << exception.what() << std::endl;
