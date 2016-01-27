@@ -179,25 +179,31 @@ int main(int argc, const char * argv[]) {
         double put_theta_v = put_theta(S, K, r, v, T);
         double put_rho_v = put_rho(S, K, r, v, T);
 
-        std::cout << "<p><big>Underlying:      " << S << "</big></p>";
-        std::cout << "<p><big>Strike:          " << K << "</big></p>";
-        std::cout << "<p><big>Risk-Free Rate:  " << r << "</big></p>";
-        std::cout << "<p><big>Volatility:      " << v << "</big></p>";
-        std::cout << "<p><big>Maturity:        " << T << "</big></p>";
+        std::cout << "<html><head><title>Index</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css\"><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js\"></script><script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js\"></script></head><body> ";
 
-        std::cout << "<p><big>Call Price:      " << call << "</big></p>";
-        std::cout << "<p><big>Call Delta:      " << call_delta_v << "</big></p>";
-        std::cout << "<p><big>Call Gamma:      " << call_gamma_v << "</big></p>";
-        std::cout << "<p><big>Call Vega:       " << call_vega_v << "</big></p>";
-        std::cout << "<p><big>Call Theta:      " << call_theta_v << "</big></p>";
-        std::cout << "<p><big>Call Rho:        " << call_rho_v << "</big></p>";
+        std::cout << "<div class= \"panel panel-primary\">  <div class=\"panel-heading\"><h3 class=\"panel-title\">GREEKS</h3></div><div class=\"list-group\">";
 
-        std::cout << "<p><big>Put Price:       " << put << "</big></p>";
-        std::cout << "<p><big>Put Delta:       " << put_delta_v << "</big></p>";
-        std::cout << "<p><big>Put Gamma:       " << put_gamma_v << "</big></p>";
-        std::cout << "<p><big>Put Vega:        " << put_vega_v << "</big></p>";
-        std::cout << "<p><big>Put Theta:       " << put_theta_v << "</big></p>";
-        std::cout << "<p><big>Put Rho:         " << put_rho_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Underlying:      " << S << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Strike:          " << K << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Risk-Free Rate:  " << r << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Volatility:      " << v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Maturity:        " << T << "</big></p>";
+
+        std::cout << "<p class=\"list-group-item\"><big>Call Price:      " << call << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Call Delta:      " << call_delta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Call Gamma:      " << call_gamma_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Call Vega:       " << call_vega_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Call Theta:      " << call_theta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Call Rho:        " << call_rho_v << "</big></p>";
+
+        std::cout << "<p class=\"list-group-item\"><big>Put Price:       " << put << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Put Delta:       " << put_delta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Put Gamma:       " << put_gamma_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Put Vega:        " << put_vega_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Put Theta:       " << put_theta_v << "</big></p>";
+        std::cout << "<p class=\"list-group-item\"><big>Put Rho:         " << put_rho_v << "</big></p>";
+
+        std::cout << "</div></body></html>";
 
     } catch (const std::exception& exception) {
         std::cerr << "Error: " << exception.what() << std::endl;
