@@ -31,7 +31,7 @@ app.post('/', function(req, res){
 
 child = exec('./csv_string ' + company + ' ' + beginday + ' ' + beginmonth + ' ' + beginyear + ' ' + endday + ' ' + endmonth + ' ' + endyear + ' ' + strike,
   function (error, stdout, stderr) {
-    res.send('stdout: ' + stdout);
+    res.send(stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
       console.log('exec error: ' + error);
