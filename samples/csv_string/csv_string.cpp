@@ -66,16 +66,16 @@ int main(int argc, const char * argv[]) {
         Date begin;
         Date end;
 
-        int beginDay = argv[2];
-        int beginMonth = argv[3];
-        int beginYear = argv[4];
+        int beginDay = atoi(argv[2]);
+        int beginMonth = atoi(argv[3]);
+        int beginYear = atoi(argv[4]);
 
-        int endDay = argv[5];
-        int endMonth = argv[6];
-        int endYear = argv[7];
+        int endDay = atoi(argv[5]);
+        int endMonth = atoi(argv[6]);
+        int endYear = atoi(argv[7]);
 
         double S; // Option price
-        double K = argv[8]; // Strike price
+        double K = atof(argv[8]); // Strike price
         double r = 0.05;
         double v;
         double T = 1.0;
