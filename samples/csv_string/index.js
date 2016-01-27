@@ -31,7 +31,7 @@ app.post('/', function(req, res){
 
 child = exec('./csv_string ' + company + ' ' + beginday + ' ' + beginmonth + ' ' + beginyear + ' ' + endday + ' ' + endmonth + ' ' + endyear + ' ' + strike,
   function (error, stdout, stderr) {
-    console.log('stdout: ' + stdout);
+    res.send('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
       console.log('exec error: ' + error);
@@ -39,7 +39,7 @@ child = exec('./csv_string ' + company + ' ' + beginday + ' ' + beginmonth + ' '
 });
 
              
- res.sendfile('layout.html');
+ 
 });
 
 app.listen(3000);
